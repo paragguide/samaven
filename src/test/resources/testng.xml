@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="FacebookTest">
+  <parameter name="browser" value="chrome" /> 
+  <parameter name="url" value="https://www.facebook.com/" /> 
+  <parameter name="scrshot" value="facebookimg" />
+  <parameter name="workbook" value="facebook.xlsx" />
+  <parameter name="sheet" value="Sheet1" />
+  <parameter name="file" value="facebook" /> 
+  <parameter name="dest" value="dest1" />
+  <parameter name="key" value="false" />
+    <classes>
+      <class name="testcases.FacebookTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="StateTest">
+  <parameter name="browser" value="chrome" /> 
+  <parameter name="url" value="http://www.rminfotechsolutions.com/VideoRegNewRMInfotech.html" /> 
+  <parameter name="scrshot" value="rminfotechimg" />
+  <parameter name="workbook" value="States.xlsx" />
+  <parameter name="sheet" value="Sheet1" />
+  <parameter name="file" value="states" /> 
+  <parameter name="dest" value="dest2" />
+  <parameter name="key" value="true" />
+    <classes>
+      <class name="testcases.StatesTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
